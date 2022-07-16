@@ -2,6 +2,7 @@ function validate(){
     const name = document.getElementById("name").value
     const mobile = document.getElementById("mobile").value
     const email = document.getElementById("email").value
+    const suggestion = document.getElementById("suggestion").value
     const term = document.getElementById("term")
 
 
@@ -12,11 +13,11 @@ function validate(){
         error = true
     }
     else if(!name.match(/[a-z]/)){
-        document.getElementById("name_error").innerHTML = "name must have one lower case letter"
+        document.getElementById("name_error").innerHTML = "Name must have one lower case letter"
         error = true
     }
     else if(!name.match(/[A-Z]/)){
-        document.getElementById("name_error").innerHTML = "name must have one Upper case letter"
+        document.getElementById("name_error").innerHTML = "Name must have one Upper case letter"
         error = true
     }
     else if(name.match(/[!@#$%^&]/) && (name.match(/[0-9]/))){
@@ -24,11 +25,11 @@ function validate(){
         error = true
     }
     else if(name.match(/[!@#$%^&]/)){
-        document.getElementById("name_error").innerHTML = "name doesnot contain special character"
+        document.getElementById("name_error").innerHTML = "Name doesnot contain special character"
         error = true
     }
     else if(name.match(/[0-9]/)){
-        document.getElementById("name_error").innerHTML = "name doesnot contain numeric value"
+        document.getElementById("name_error").innerHTML = "Name doesnot contain numeric value"
         error = true
     }
     else{
@@ -36,7 +37,7 @@ function validate(){
     }
     //Mobile Validation
     if(mobile === ""){
-        document.getElementById("mobile_error").innerHTML = "mobile number is required"
+        document.getElementById("mobile_error").innerHTML = "Mobile number is required"
         error = true
     }
     else if(mobile.length !== 10 || isNaN(mobile)){
@@ -52,7 +53,7 @@ function validate(){
     let dotPos = email.lastIndexOf('.')
 
     if(email===""){
-        document.getElementById("email_error").innerHTML = "email is required"
+        document.getElementById("email_error").innerHTML = "Email is required"
         error = true
     }
     else if(atPos <=0 || dotPos <= 0 || (dotPos - atPos) <= 4 || dotPos == email.length-1 ){
@@ -62,6 +63,16 @@ function validate(){
     else{
         document.getElementById("email_error").innerHTML = ""
     }
+
+    // Suggestion Box
+    if(suggestion===""){
+        document.getElementById("suggestion_error").innerHTML = "Your Suggestion is required"
+        error = true
+    }
+    else{
+        document.getElementById("suggestion_error").innerHTML = ""
+    }
+
     //Check box
 
     if(!term.checked){
