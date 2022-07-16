@@ -158,29 +158,29 @@
             </ul>
         </div> -->
     </div>
-    <div class="container  p-5">
+    <div class="container p-5">
         <div class="row">
             <div class="col-md-8  p-3 mx-auto my-auto ">
                 <h1 class="h3 border-bottom border-dark">Get In Touch</h1>
                 <form action="ThankYou.html" onsubmit="return validate();">
                 <div class="mb-1">
                     <label for="name">Name <span class="text-danger">*</span></label>
-                    <input type="text" name="name" id="name" class="form-control">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name">
                     <label for="name_error" id="name_error" class="text-danger"></label>
                 </div>
                 <div class="mb-1">
                     <label for="mobile">Mobile <span class="text-danger">*</span></label>
-                    <input type="tel" name="mobile" id="mobile" class="form-control">
+                    <input type="tel" name="mobile" id="mobile" class="form-control" placeholder="Enter Your Mobile Number"> 
                     <label for="mobile_error" id="mobile_error" class="text-danger"></label>
                 </div>
                 <div class="mb-1">
                     <label for="email">Email <span class="text-danger">*</span></label>
-                    <input type="email" name="email" id="email" class="form-control">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your mail Id">
                     <label for="email_error" id="email_error" class="text-danger"></label>
                 </div>
                 <div class="my-1">
                     <label for="suggestion">Suggestion <span class="text-danger">*</span></label>
-                    <input type="text" name="suggestion" id="suggestion" class="form-control" style="height: 180px;">
+                    <input type="text" name="suggestion" id="suggestion" class="form-control" style="height:100px;" placeholder="Type Your Suggestios">
                     <label for="suggestion_error" id="suggestion_error" class="text-danger"></label>
                   </div>
                 <p><small>I agree to submit the following suggestions</small></p>
@@ -211,7 +211,15 @@
         </div>
     </div>
     <!-- Footer -->
-    <div class="container bg-dark text-light">
+    <div class="container bg-dark text-light py-5">
+        <div class="d-flex justify-content-between">
+            &copy; Satish Ranjan Das,2022
+            <a href="Resume.pdf" class="btn btn-light" target="_blank">Download CV</a>
+        </div>
+
+    </div>
+
+    <!-- <div class="container bg-dark text-light">
         <div class="row">
             <div class="col-md-6 py-5">
                 &copy; Satish Ranjan Das,2022
@@ -220,7 +228,7 @@
                 <a href="Resume.pdf" target="_blank" class="btn btn-light" >Download CV</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="script.js"></script>
     <script defer src="/bs/bootstrap.bundle.js"></script>
