@@ -1,5 +1,15 @@
 body{
-    background-color: #ddd;
+    /* background-color: rgb(195, 75, 75); */
+    /* Created with https://www.css-gradient.com */
+    /* background: #BE89CC;
+    background: -webkit-linear-gradient(bottom right, #BE89CC, #64E549);
+    background: -moz-linear-gradient(bottom right, #BE89CC, #64E549);
+    background: linear-gradient(to top left, #BE89CC, #64E549); */
+    /* Created with https://www.css-gradient.com */
+background: #1DDEB8;
+background: -webkit-linear-gradient(bottom right, #1DDEB8, #6DA5EC);
+background: -moz-linear-gradient(bottom right, #1DDEB8, #6DA5EC);
+background: linear-gradient(to top left, #1DDEB8, #6DA5EC);
 }
 .user-img{
     height: 200px;
